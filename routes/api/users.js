@@ -18,11 +18,11 @@ const User = require("../../models/User");
 router.post("/register", (req, res) => {
     
     //Form validation
-    const {errors, isValid} = validateRegisterInput(req.body);
+    // const {errors, isValid} = validateRegisterInput(req.body);
     
-    if(!isValid){
-        return res.status(400).json(errors);
-    }
+    // if(!isValid){
+    //     return res.status(400).json(errors);
+    // }
 
     User.findOne({email:req.body.email}).then(user=>{
 
