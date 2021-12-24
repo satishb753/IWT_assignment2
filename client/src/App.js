@@ -7,8 +7,7 @@ import bootstrap from "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from './components/Navbar';
 import Homescreen from './screens/Homescreen';
-import Registerscreen from './screens/Registerscreen';
-import Loginscreen from './screens/Loginscreen';
+import SignInAndSignUpPage from "./screens/sign-in-and-sing-up.component";
 
 function App() {
   return (
@@ -16,8 +15,7 @@ function App() {
       <Navbar />
       <BrowserRouter>
         <Route path="/" exact component={Homescreen}/>
-        <Route path="/register" exact component={Registerscreen}/>
-        <Route path="/login" exact component={Loginscreen}/>
+        <Route path="/register" exact component={SignInAndSignUpPage}/>
       </BrowserRouter>
       
     </div>
